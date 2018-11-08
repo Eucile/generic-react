@@ -22,10 +22,10 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={ContentContainer} />
-        <Route path='/Shop' component={ShopItems} />
-        <Route path='/fnord' component={fnordersmarketlist}/>
-        <Route path='/Party' component={PartyItems} />
-        <Route path='/About' component={About} />
+        <Route path='/' component={ContentContainer} />
+        <Route path='/' component={ContentContainer}/>
+        <Route path='/' component={ContentContainer} />
+        <Route path='/' component={ContentContainer} />
       </Switch>
     </div>
   );
