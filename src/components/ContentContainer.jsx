@@ -1,5 +1,5 @@
 import React from "react";
-import SideBar from "./SideBar";
+import SidebarItems from "./SidebarItems";
 import MainContent from "./MainContent";
 
 function ContentContainer(){
@@ -12,7 +12,7 @@ function ContentContainer(){
   };
   return (
     <div style={containerStyle}>
-      <SideBar/>
+      <SidebarItems/>
       <MainContent/>
     </div>
   );
