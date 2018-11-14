@@ -1,1 +1,1 @@
-![](src/assets/images/smiles.png)
+![:)](src/assets/images/smiles.png)

@@ -10,7 +10,7 @@ function Party(props){
     backgroundRepeat: 'no-repeat'
   };
   return (
-    <div>
+    <div style={partyStyles}>
       <h2>{props.price}</h2>
       <p>{props.info}</p>
     </div>

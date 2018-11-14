@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "./Logo";
 import NavBar from "./Nav";
 import SearchField from "./SearchField";
-import { Link } from 'react-router-dom';
 
 function Header(){
   var HeaderStyles = {
