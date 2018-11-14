@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { v4 } from 'uuid';
 import Moment from 'moment';
 
 function NewCommentForm(props){
@@ -9,7 +8,7 @@ function NewCommentForm(props){
 
   function handleNewCommentFormSubmission(event) {
     event.preventDefault();
-    props.onNewCommentCreation({names: _names.value, comment: _comment.value, id: v4(), timeOpen: new Moment()});
+    props.onNewCommentCreation({names: _names.value, comment: _comment.value, timeOpen: new Moment()});
     _names.value = '';
     _comment.value = '';
   }

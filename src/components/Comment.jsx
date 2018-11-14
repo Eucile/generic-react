@@ -9,9 +9,8 @@ function Comment(props) {
             background-color: red;
           }
       `}</style>
-      <p>Tesssstttt</p>
       <h3>{props.names}</h3>
-      <h4>{props.commentTimeStamp}</h4>
+      <p>{props.commentTimeStamp}</p>
       <p><em>{props.comment}</em></p>
       <hr/>
     </div>

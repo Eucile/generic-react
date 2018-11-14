@@ -3,6 +3,7 @@ import SidebarItems from "./SidebarItems";
 import MainContent from "./MainContent";
 import CommentList from './CommentList';
 import NewCommentControl from './NewCommentControl';
+import Moment from 'moment';
 
 class ContentContainer extends React.Component{
   constructor() {
@@ -15,7 +16,7 @@ class ContentContainer extends React.Component{
   componentDidMount() {
     this.waitTimeUpdateTimer = setInterval(() =>
       this.updateCommentElapsedWaitTime(),
-    60000
+    5000
     );
   }
   componentWillUnmount(){
@@ -25,7 +26,7 @@ class ContentContainer extends React.Component{
     console.log("check");
     let newMasterCommentList = this.state.masterCommentList.slice();
     newMasterCommentList.forEach((comment) =>
-      comment.formattedWaitTime = (comment.timeOpen).fromNow(true)
+      comment.commentTimeStamp = (comment.timeOpen).fromNow(true)
     );
     this.setState({masterCommentList: newMasterCommentList});
   }
