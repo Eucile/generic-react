@@ -5,9 +5,9 @@ function Comment(props) {
   return(
     <div>
       <style jsx>{`
-          div {
-            background-color: red;
-          }
+        div {
+
+        }
       `}</style>
       <h3>{props.names}</h3>
       <p>{props.commentTimeStamp}</p>
